@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>View Products</title>
+
+<link rel="stylesheet" href="CSS-BootStrap/bootstrap.min.css">
+
+<link rel="stylesheet" href="Css/all.css">
+
+<link rel="stylesheet" href="Css/Stylee-Sheet.css">
+
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark  py-1">
+
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- الشعار -->
+
+    <div class="d-flex align-items-center">
+
+      <img src="Images/logo1.jpg" class=" rounded-circle" width="70" height="70">
+
+      <a class="navbar-brand ms-2 my-title" href="#">TechZone Shop</a>
+
+    </div> <!-- d-flex align-items-center -->
+
+    <!-- أيقونة السلة للشاشات الصغيرة -->
+    <div class="cart-icon d-lg-none position-relative so">
+
+      <i class="fa-solid fa-cart-shopping fs-4 icon"></i>
+
+      <span class="cart-count position-absolute cartCount">0</span>
+
+      <!-- المنتجات داخل السلة -->
+      <div class="cart-products">
+
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="cart-items"></div>
+
+        <a href="Cart-Products.html" class="View">View All Products</a>
+
+      </div> <!-- cart-products -->
+
+    </div> <!-- cart-icon -->
+
+    <!-- زرار التوجّل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLg" aria-controls="navbarLg" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <!-- القائمة -->
+    <div class="collapse navbar-collapse" id="navbarLg">
+
+      <div class="d-flex flex-lg-row align-items-center justify-content-lg-end justify-content-between w-100 mt-lg-0 gap-2">
+        
+        <div class="empty  fw-bold pt-2" style="font-size: 18px;"></div>
+
+        <!-- زر اللوج آوت -->
+        <button type="button" class="btn see btn-outline-danger btn-sm mt-lg-2 position-relative" id="Logout" style="font-size: 19px; background-color: red; color: aliceblue; transition: 0.3s;">Logout</button>
+
+        <!-- أيقونة السلة للشاشات الكبيرة -->
+        <div class="cart-icon d-none d-lg-block position-relative">
+
+          <i class="fa-solid fa-cart-shopping fs-4 icon"></i>
+
+          <span class="cart-count position-absolute cartCount">0</span>
+
+          <!-- المنتجات داخل السلة -->
+          <div class="cart-products">
+
+            <i class="fa-solid fa-xmark close"></i>
+
+            <div class="cart-items"></div>
+
+            <a href="Cart-Products.html" class="View">View All Products</a>
+            
+          </div> <!-- cart-items -->
+
+        </div> <!-- cart-products -->
+
+      </div> <!-- cart-icon -->
+
+    </div> <!--d-flex flex-lg-row align-items-center justify-content-lg-end justify-content-between w-100 mt-lg-0 gap-2-->
+
+  </div> <!-- collapse navbar-collapse-->
+
+</div> <!-- container-fluid -->
+
+</nav> <!-- navbar -->
+
+
+
+<div class="container mt-4">
+
+  <div class="row saved-products"></div>
+
+</div> <!-- container -->
+
+<div class="grand-total" style="font-size:24px; text-align:center; margin-top:20px;"></div>
+
+<hr>
+
+
+<h2 class="mt-4 me-good">favorites-Items</h2>
+
+<div class="favorites-container container mt-1"></div>
+
+
+
+
+<div class="text-center mt-4">
+
+  <button id="goHome" class="btn btn-primary">🏠 Back to Home</button>
+  
+</div> 
+
+
+
+
+ <script src="JavaScript-BootStrap/bootstrap.bundle.min.js"></script>   
+<script src="Javascript/Cart-Products.js"></script>
+</body>
+</html>
