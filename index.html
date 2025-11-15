@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechZone Shop</title>
+    
+    <title>Register</title>
 
  <link rel="stylesheet" href="CSS-BootStrap/bootstrap.min.css">
 
@@ -13,174 +15,44 @@
 
 
 </head>
+
 <body>
-
-<header>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark  py-1">
-
-  <div class="container-fluid d-flex align-items-center justify-content-between">
     
-    <!-- الشعار -->
+
+
+ <div class="hero-section">
+
+  <nav class="navbar navbar-expand  py-1 fixed-top">
+
+  <div class="container-fluid d-flex align-items-center">
+
+    <!-- الشعار واسم المتجر -->
 
     <div class="d-flex align-items-center">
 
-      <img src="Images/logo1.jpg" class=" rounded-circle" width="70" height="70">
-
-      <a class="navbar-brand ms-2 my-title" href="#">TechZone Shop</a>
+      <img src="Images/logo1.jpg" class="rounded-circle" width="70" height="70">
+      
+      <a class="navbar-brand my-title ms-2">TechZone Shop</a>
 
     </div> <!-- d-flex align-items-center -->
 
-    <!-- أيقونة السلة للشاشات الصغيرة -->
-    <div class="cart-icon d-lg-none position-relative so">
+    <!-- روابط Sign In / Sign Up -->
+     
+ <div class="col-md-3 col-12 col-lg-2">
 
-      <i class="fa-solid fa-cart-shopping fs-4 icon"></i>
+<div class="d-flex gap-2 justify-content-space-between">
 
-      <span class="cart-count position-absolute cartCount">0</span>
+      <a href="Login.html" class="pop">Sign In</a>
 
-      <!-- المنتجات داخل السلة -->
-      <div class="cart-products">
-
-        <i class="fa-solid fa-xmark close"></i>
-
-        <div class="cart-items"></div>
-
-      </div> <!-- cart-products -->
-
-    </div> <!-- cart-icon -->
-
-    <!-- زرار التوجّل -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLg" aria-controls="navbarLg" aria-expanded="false" aria-label="Toggle navigation">
-
-      <span class="navbar-toggler-icon"></span>
-
-    </button>
-
-    <!-- القائمة -->
-    <div class="collapse navbar-collapse" id="navbarLg">
-
-      <div class="d-flex flex-lg-row align-items-center justify-content-lg-end justify-content-between w-100 mt-lg-0 gap-2">
-        
-        <div class="empty fw-bold pt-2" style="font-size: 18px;"></div>
-
-        <!-- زر اللوج آوت -->
-        <button type="button" class="btn see  btn-sm mt-lg-2 position-relative" id="Logout" style="font-size: 19px; background-color: red; color:aliceblue; transition: 0.3s;">Logout</button>
-
-        <!-- أيقونة السلة للشاشات الكبيرة -->
-        <div class="cart-icon d-none d-lg-block position-relative">
-
-          <i class="fa-solid fa-cart-shopping fs-4 icon"></i>
-
-          <span class="cart-count position-absolute cartCount">0</span>
-
-          <!-- المنتجات داخل السلة -->
-          <div class="cart-products">
-
-            <i class="fa-solid fa-xmark close"></i>
-
-            <div class="cart-items be-fun"></div>
-            
-          </div> <!-- cart-items -->
-
-        </div> <!-- cart-products -->
-
-      </div> <!-- cart-icon -->
-
-    </div> <!--d-flex flex-lg-row align-items-center justify-content-lg-end justify-content-between w-100 mt-lg-0 gap-2-->
-
-  </div> <!-- collapse navbar-collapse-->
-
-</div> <!-- container-fluid -->
-
-</nav> <!-- navbar -->
-
-
-</header> <!--*********************************************************************header********************************************************************************************-->
-
-<main class="container-fluid sm-mt-5">
-
-  <div class="d-flex justify-content-center">
-
-    <div class="row g-4 justify-content-center align-items-center" style="max-width: 900px; width: 100%;">
+      <a href="Register.html" class="pop">Sign Up</a>
       
-      <!-- Dropdown -->
+      </div> <!-- col-md-3 col-12 col-lg-2" -->
 
-      <div class="col-12 col-sm-6 col-md-4">
+    </div> <!-- d-flex gap-2-->
 
-        <select class="form-select" aria-label="Search by product name">
+  </div> <!-- container-fluid  -->
 
-          <option selected>Search By Product Name</option>
-
-          <option>Search By Category</option>
-
-        </select>
-
-      </div> <!-- col-12 col-sm-6 col-md-4 -->
-
-      <!-- Search Form -->
-
-      <div class="col-12 col-sm-6 col-md-7">
-
-        <form class="d-flex flex-column flex-sm-row gap-4 w-100" role="search">
-
-          <input class="form-control wop" type="text" placeholder="Search..." aria-label="Search" value="">
-
-          <button class="btn-speace" type="submit">Search</button>
-
-        </form>   <!--d-flex flex-column flex-sm-row gap-4 w-100 -->
-
-      </div> <!-- col-12 col-sm-6 col-md-7 -->
-
-    </div> <!-- row -->
-
-  </div> <!-- d-flex -->
-
-
-
-</main> <!--*********************************************************************main******************************************************************************************** -->
-
-
-
-
-
-<section class="mt-5 container">
-
- <div class="row g-4 justify-content-center allproducts">
-
- <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-
-
-<div class="card-bro">
-
-  <img src="Images/pic18.jpg" class="card-img-top w-100" alt="..." style="object-fit: cover; height: 200px;">
-
-  <div class="card-body">
-
-    <h5 class="card-title text-center">Card title</h5>
-
-    <p class="card-text text-center mb-0">price:$150</p>
-
-     <p class="card-text text-center mb-4 pt-2">Category:Tablet</p>
-
-     <div class="d-flex justify-content-center align-items-center gap-2">
-
-       <i class="fa-solid fa-heart big-heart"></i>
-
-    <span class="btn btn-click">add to cart</span>
-
-     </div> <!-- d-flex justify-content-center align-items-center gap-2 -->
-
-  </div> <!--card-body-->
-
-</div> <!-- card -->
-
-</div> <!-- col-12 col-md-6 col-lg-4 -->
-
-</div> <!-- row -->
-
-
-
-</section> <!--*********************************************************************section******************************************************************************************** -->
+</nav> <!-- navbar navbar-expand -->
 
 
 
@@ -189,7 +61,57 @@
 
 
 
+<section class="section-input">
 
+<div class="pt-2">
+
+ <label for="exampleInput" class="form-label">Frist Name</label>
+
+  <input type="text" class="form-control first-name" id="exampleInput" placeholder="Enter your frist name">
+
+</div>
+
+ <div class="pt-2">
+
+ <label for="exampleInput" class="form-label">Last Name</label>
+
+  <input type="text" class="form-control last-name" id="exampleInput" placeholder="Enter your last name">
+
+</div>
+
+
+<div class="pt-2">
+
+  <label for="exampleEmail" class="form-label">Email Address</label>
+
+  <input type="email" class="form-control email" id="exampleEmail" placeholder="name@example.com">
+
+</div>
+
+<div class="pt-2">
+
+<label for="examplePassword" class="form-label">Password</label>
+
+  <input type="password" class="form-control password" id="examplePassword" placeholder="Password">
+
+</div>
+
+<div class="d-flex justify-content-center">
+
+  <button value="Sign-in" class="mt-3 sign-up" id="Submit">Sign up</button>
+ 
+</div>
+
+
+<div class="d-flex justify-content-center pt-2 text-nowrap">
+
+ Have an account?<a href="Login.html" class="ms-1 dj">Sign In</a>
+
+</div>
+
+</section> <!-- section -->
+
+ </div> <!-- hero-section -->
 
 
 
@@ -202,7 +124,7 @@
 
  <script src="JavaScript-BootStrap/bootstrap.bundle.min.js"></script>   
 
-<script src="Javascript/Javascrip.js"></script>
+<script src="Javascript/Register.js"></script>
 
 </body>
 </html>
