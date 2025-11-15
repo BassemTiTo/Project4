@@ -2,13 +2,12 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
 }
 
 body{
-  font-family:'Times New Roman', Times, serif;
+font-family:'Times New Roman', Times, serif;
 background-color: rgb(185, 185, 185);
-height: 4000px;
+
 
 }
 
@@ -117,18 +116,26 @@ transition: 0.3s;
 }
 
 @media (max-width: 360px){
-  .pop{
-    font-size: 14px;      
-    padding: 5px;     
+  .dj, .pop {
+    font-size: 13px; /* أقل شوي عشان يناسب أصغر الشاشات */
   }
 }
+
 @media (max-width: 344px){
   .pop{
-    font-size: 14px;      
+    font-size: 13px;      
     padding: 5px;   
   margin-left: -5px;
   }
 }
+
+@media (max-width: 360px){
+  .section-input {
+    max-width: 90%;
+    padding: 12px;
+  }
+}
+
 
 .pop:hover {
   color: #FFFFFF;
@@ -514,10 +521,23 @@ text-transform: capitalize;
   color:#FFFFFF;
 } 
 
+.center-box, .cart-items, .saved-products {
+  display: flex;
+  flex-wrap: wrap; /* يخلي العناصر تنتقل للسطر التالي لو ضاق المكان */
+  justify-content: center;
+}
 
 
 
+.favourites-items-bro p {
+  font-size: 4vw; /* يتغير حسب عرض الشاشة */
+}
 
+.dj, .d-flex {
+  white-space: normal; /* يسمح للنص بالانتقال للسطر التالي */
+  word-wrap: break-word;
+  word-break: break-word;
+}
 
 
 /* *****************************************************************************************/
@@ -741,11 +761,11 @@ transition: 0.4s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
- 
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    width: 280px;
+     width: 90%; 
+  max-width: 280px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background-color:  #787878  ;
       position: relative;
@@ -768,7 +788,16 @@ transition: 0.4s;
     margin: 5px 0;
     font-size: 21px;
 text-transform: capitalize;
+
 }
+
+.favourites-items-bro p,
+.favourites-items-bro a {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 
 .big-heart-too {
     color: red;
