@@ -26,7 +26,7 @@ if(getemail.trim() && getemail === email.value.trim() && getpassword.trim() && g
 
     setTimeout(function(){
      
-    window.location = "index.html"
+    window.location = "home.html"
          
     },500)
 

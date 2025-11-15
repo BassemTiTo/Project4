@@ -30,7 +30,7 @@ localStorage.clear()
 
 setTimeout(function() {
 
-  window.location="Register.html"    
+  window.location="index.html"    
 
 },500)
 
@@ -345,5 +345,5 @@ setTimeout(() => parentDiv.style.display = "none", 300);
 });
 
   document.getElementById("goHome").addEventListener("click", function () {
-    window.location.href = "index.html";  // المسار اللي عايز تروّح له
+    window.location.href = "home.html";  // المسار اللي عايز تروّح له
   });

@@ -27,7 +27,7 @@ localStorage.clear()
 
 setTimeout(function() {
 
-  window.location="Register.html"    
+  window.location="index.html"    
 
 },500)
 
@@ -398,7 +398,7 @@ totalDiv.innerHTML = `<h3>Total Price: $${grandTotal}</h3>`;
 
 // زر العرض
 let viewBtn = document.createElement("a");
-viewBtn.href = "Cart-Products.html";
+viewBtn.href = "cartproducts.html";
 viewBtn.classList.add("View");
 viewBtn.textContent = "View All Products";
 

@@ -111,14 +111,14 @@ transition: 0.3s;
 
 @media (max-width: 390px){
   .pop{
-    font-size: 17px;      
+    font-size: 15px;      
     padding: 5px;     
   }
 }
 
 @media (max-width: 360px){
   .pop{
-    font-size: 15px;      
+    font-size: 14px;      
     padding: 5px;     
   }
 }
