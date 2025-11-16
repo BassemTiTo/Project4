@@ -116,25 +116,35 @@ transition: 0.3s;
 }
 
 @media (max-width: 360px){
-  .dj, .pop {
+  .pop {
     font-size: 13px; /* أقل شوي عشان يناسب أصغر الشاشات */
   }
 }
+@media (max-width: 344px) {
+  .pop {
+    font-size: 12px;
+  
+  text-align: center;
 
-@media (max-width: 344px){
-  .pop{
-    font-size: 13px;      
-    padding: 5px;   
-  margin-left: -5px;
+  }
+
+
+}
+
+.dj {
+  white-space: nowrap; /* يمنع اللينك من الانكسار */
+  font-size: 14px;     /* قلل الحجم على الشاشات الصغيرة */
+}
+
+@media (max-width: 480px){
+  .dj {
+    font-size: 15px;   /* أصغر شوي */
+  }
+  .d-flex {
+    flex-wrap: nowrap;  /* اجبر العناصر على البقاء في سطر واحد */
   }
 }
 
-@media (max-width: 360px){
-  .section-input {
-    max-width: 90%;
-    padding: 12px;
-  }
-}
 
 
 .pop:hover {
@@ -192,10 +202,6 @@ transition: 0.3s;
   color:  #1E1E1E ;
 }
 
-.dj{
-color: #0099FF;
-font-size: 19px;
-}
 
 .cart-icon{
 position: relative;
@@ -521,23 +527,10 @@ text-transform: capitalize;
   color:#FFFFFF;
 } 
 
-.center-box, .cart-items, .saved-products {
-  display: flex;
-  flex-wrap: wrap; /* يخلي العناصر تنتقل للسطر التالي لو ضاق المكان */
-  justify-content: center;
-}
 
 
 
-.favourites-items-bro p {
-  font-size: 4vw; /* يتغير حسب عرض الشاشة */
-}
 
-.dj, .d-flex {
-  white-space: normal; /* يسمح للنص بالانتقال للسطر التالي */
-  word-wrap: break-word;
-  word-break: break-word;
-}
 
 
 /* *****************************************************************************************/
@@ -791,12 +784,7 @@ text-transform: capitalize;
 
 }
 
-.favourites-items-bro p,
-.favourites-items-bro a {
-  word-wrap: break-word;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
+
 
 
 .big-heart-too {
