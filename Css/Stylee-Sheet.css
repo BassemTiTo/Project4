@@ -643,6 +643,7 @@ transition: 0.4s;
     object-fit: cover;
     border-radius: 5px;
 }
+
 .quantity-controls-cart button{
   width: 30px;
   height: 30px;
@@ -657,6 +658,11 @@ transition: 0.4s;
 
 .all-cart-items {
     transition: all 0.3s ease;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quantity-controls-cart .quantity {
@@ -756,14 +762,18 @@ transition: 0.4s;
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
+    min-height: 300px;  /* ارتفاع ثابت أو أقل */
     text-align: center;
-     width: 90%; 
-  max-width: 280px;
+    flex: 1 1 250px; /* ينمو ويصغر حسب المساحة */
+    max-width: 280px;
+    min-width: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background-color:  #787878  ;
       position: relative;
   transition: all 0.3s ease;
 }
+
+
 .favourites-items-bro:hover{
   border: 1px solid red;
 }
@@ -771,18 +781,21 @@ transition: 0.4s;
 
 .favourites-items-bro img {
     width: 100%;
-    height: 200px; 
-      border-radius: 5px;
+    height: 180px; /* أو حسب تصميمك */
     object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
+
 
 
 .favourites-items-bro p {
-    margin: 5px 0;
-    font-size: 21px;
-text-transform: capitalize;
-
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 
 
 

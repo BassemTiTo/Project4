@@ -123,7 +123,7 @@ seclectProducts.forEach(function(chooseitems){
     // إنشاء عمود لكل عنصر
     let col = document.createElement("div");
 
-    col.classList.add("col-12", "col-md-6", "col-lg-4", "d-flex", "justify-content-center");
+    col.classList.add("col-12", "col-md-6", "col-lg-4", "d-flex", "justify-content-center","align-items-stretch");
 
     col.innerHTML = `
       <div class="all-cart-items border-0">
